@@ -1,0 +1,64 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN"
+        "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+    <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+    <title>Расчет результатов кубка</title>
+    <link rel="stylesheet" type="text/css" href="style/view.css" media="all">
+    <script type="text/javascript" src="style/view.js"></script>
+
+</head>
+<body id="main_body">
+
+<img id="top" src="style/top.png" alt="">
+<div id="form_container">
+
+    <h1><a>Расчет результатов кубка</a></h1>
+    <form id="form_53300" class="appnitro" enctype="multipart/form-data" method="post" action="process.php">
+        <div class="form_description">
+            <h2>Расчет результатов кубка</h2>
+            <p>
+                <br/>
+                Это скрипт для расчета результатов кубка. Расчет идет по правилам из положения кубка СКО "Русь" на 2017 год.
+                Пока что он берет на входе файлы <b>.csv</b> экспортированные с закладки "Участники" в программе SFR Event Centre.<br/><br/>
+
+                Ваши пожелания по улучшению скрипта принимаются на <a href="mailto:vasyaabr@gmail.com">vasyaabr@gmail.com</a>.
+            </p>
+        </div>
+        <ul>
+
+            <li id="li_2">
+                <label class="description" for="CupName">Название кубка / серии </label>
+                <div>
+                    <input id="CupName" name="CupName" class="element text large" type="text" maxlength="255"
+                           value=""/>
+                </div>
+            </li>
+            <li id="li_1">
+                <label class="description" for="element_1">Файлы с данными соревнований </label>
+                <div>
+                    <input id="element_1" name="files[]" class="element file" type="file" multiple="multiple"/>
+                </div>
+                <p class="guidelines" id="guide_1">
+                    <small>формат CSV</small>
+                </p>
+            </li>
+            <li id="li_3">
+                <label class="description" for="setCount">Количество этапов с наилучшим результатом </label>
+                <div>
+                    <input id="setCount" name="setCount" class="element text small" type="text" maxlength="255"
+                           value="10"/>
+                </div>
+            </li>
+
+            <li class="buttons">
+                <input type="hidden" name="form_id" value="53300"/>
+
+                <input id="saveForm" class="button_text" type="submit" name="submit" value="Рассчитать результаты"/>
+            </li>
+        </ul>
+    </form>
+</div>
+<img id="bottom" src="style/bottom.png" alt="">
+</body>
+</html>

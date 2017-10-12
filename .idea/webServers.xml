@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="WebServers">
+    <option name="servers">
+      <webServer id="49594622-2874-47a5-9ff8-69f1014bd9e1" name="gdrive" url="http://localhost">
+        <fileTransfer port="0" mountedRoot="$USER_HOME$/gdrive/Ориентирование/o-cup" accessType="MOUNT" />
+      </webServer>
+      <webServer id="9f35e386-6624-468a-8e59-03393b25fbd7" name="opskov" url="http://93.189.147.174/cupcalc/">
+        <fileTransfer host="93.189.147.174" port="22" rootFolder="/var/www/html/cupcalc" accessType="SFTP">
+          <advancedOptions>
+            <advancedOptions dataProtectionLevel="Private" />
+          </advancedOptions>
+          <option name="port" value="22" />
+        </fileTransfer>
+      </webServer>
+    </option>
+  </component>
+</project>
